@@ -3,7 +3,8 @@
  
 Simple Telegram Bot to extract text from image based on ocr api <br>  
 
-<a href="https://t.me.com/official_gemechis/"><img align="left" alt="Simple Telegram Bot to extract text from image based on ocr api by Gemchis Elias" width="100%" height="70" src="screenshot.png" /></a>  
+<a href="https://t.me.com/official_gemechis/"><img align="left" alt="Simple Telegram Bot to extract text from image based on ocr api by Gemchis Elias" width="100%"  src="screenshot.png" /></a> <br />
+
 
 Check out <a href="https://t.me/horanocr_bot">The Sample Bot </a>  
 
