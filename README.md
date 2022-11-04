@@ -16,6 +16,7 @@ Check out <a href="https://t.me/horanocr_bot">The Sample Bot </a>
 ## Installing / Getting started
 Go to <a href="https://t.me/botfather">@botfather <a/> and create a new bot. Copy your api token and setwebhook by pasting this link on browser.
  &middot; Change XXXXXX with your bot token
+ <br>
  &middot; Change url to domain you host the php file.
 
 ```shell
