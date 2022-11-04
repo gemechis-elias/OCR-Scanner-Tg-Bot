@@ -81,7 +81,7 @@ if($update['message']['photo'][1]['file_id'])
             if (file_put_contents('images/'.$file_name, file_get_contents($url)))
             { 
                 // Change url to place you want to store uploaded images
-                $id_url= 'https://www.yourdomain.com/path/folder/'.$file_name;
+                $id_url= 'https://www.yourdomain.com/path/img-folder/'.$file_name;
                 echo "File downloaded successfully"; 
                 $wait=  
                     array( 
@@ -100,8 +100,9 @@ if($update['message']['photo'][1]['file_id'])
                         'disable_web_page_preview' => false);
                 send("sendMessage", $wait);
                 }
-        
-            $result = file_get_contents('http://api.ocr.space/parse/imageurl?apikey=K86055456288957&url='.$id_url);
+            
+            //Change OCR-KEY to your api key from ocr.space website
+            $result = file_get_contents('http://api.ocr.space/parse/imageurl?apikey=<OCR-KEY-XXX>&url='.$id_url);
             $result=json_decode($result, true);
             $str='';
             foreach($result['ParsedResults'] as $pareValue) 
@@ -120,7 +121,7 @@ if($update['message']['photo'][1]['file_id'])
                     $error=  
                     array( 
                         'chat_id' => $chatId, 
-                        'text' =>"Server Error, Translating faild Try again...\nNB: only Image with English Text Supported",  
+                        'text' =>"Server Error, Scanning faild Try again...\nNB: only Image with English Text Supported",  
                         'parse_mode' => 'HTML',
                         'disable_web_page_preview' => false);
                     send("sendMessage", $error);
@@ -131,7 +132,7 @@ if($update['message']['photo'][1]['file_id'])
 }
 function send($method, $data)
 {  
-    $url = "https://api.telegram.org/bot5723872215:AAHHtz77we-iXpiL-w4zf7bFwi-MU4Oeh-0/".$method;
+    $url = "https://api.telegram.org/bot<Your Bot Token>/".$method;
     if (!$curld = curl_init()) {
         exit;
     }
