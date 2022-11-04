@@ -1,5 +1,5 @@
- # Text from Image Scanner Telegram Bot
- &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+ # Text from Image Scanner Telegram Bot  &middot; 
+[![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
  
 Simple Telegram Bot to extract text from image based on ocr api <br>
 
@@ -12,35 +12,33 @@ Simple Telegram Bot to extract text from image based on ocr api <br>
 
 ## Installing / Getting started
 Go to <a href="https://t.me/botfather">@botfather <a/> and create a new bot. Copy your api token and setwebhook by pasting this link on browser.
+ &middot; Change XXXXXX with your bot token
+ &middot; Change url to domain you host the php file.
 
 ```shell
-https://api.telegram.org/bot<YOUR BOT TOKEN>/setWebHook?url=yourdomain.com/bot.php
+https://api.telegram.org/botXXXXXX/setWebHook?url=yourdomain.com/bot.php
 ```
 ### Run This Code
 
 Just run this code on code editor
 
 ```shell
-from tkinter import * #import all from tkinter module
-from math import *
-def evaluate(event):
-    res.configure(text = "መልስ = " + str(eval(entry.get())))
-w = Tk()
-
-#Display የምሆኑ ፁሁፎች ናቸው
-Label(w, text="    Python tkinter Calculator").pack()
-Label(w, text="").pack()
-Label(w, text="      ቀላል የሒሳብ Calculator       ").pack()
-Label(w, text=" ").pack()
-Label(w, text="     ጥያቄውን ያስገቡ:       ").pack()
-#-----------------------------------
-entry = Entry(w) #take inpute from user
-
-entry.bind("<Return>", evaluate)
-entry.pack()
-res = Label(w)
-res.pack()
-w.mainloop()   #end
+//Change OCR-KEY to your api key from ocr.space website
+            $result = file_get_contents('http://api.ocr.space/parse/imageurl?apikey=<OCR-KEY-XXX>&url='.$id_url);
+            $result=json_decode($result, true);
+            $str='';
+            foreach($result['ParsedResults'] as $pareValue) 
+                {
+                            $str.= strval($pareValue['ParsedText']);
+                }
+                if($str!=""){ 
+                $re= 
+                array(
+                'chat_id' => $chatId, 
+                'text' => "🔍Scanned Text:\n$str\n\n@horansoftware",
+                'disable_web_page_preview' => false,);
+                    send("sendMessage", $re);
+                }   #end
 ```
 
 That Can take Mathematical expression from user and return answer!!
