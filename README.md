@@ -6,7 +6,7 @@ Simple Telegram Bot to extract text from image based on ocr api <br>
 <a href="https://t.me.com/official_gemechis/">
   <img align="left" alt="Simple Telegram Bot to extract text from image based on ocr api by Gemchis Elias" width="100%" src="screenshot.png" />
 </a>
-<br>
+<br />
 
 Check out <a href="https://t.me/horanocr_bot">The Sample Bot </a> 
 
@@ -15,17 +15,19 @@ Check out <a href="https://t.me/horanocr_bot">The Sample Bot </a>
 
 ## Installing / Getting started
 Go to <a href="https://t.me/botfather">@botfather <a/> and create a new bot. Copy your api token and setwebhook by pasting this link on browser.
- &middot; Change XXXXXX with your bot token
+ 
+  &middot; Change XXXXXX with your bot token
  <br>
- &middot; Change url to domain you host the php file.
+  &middot; Change url to domain you host the php file.
 
 ```shell
 https://api.telegram.org/botXXXXXX/setWebHook?url=yourdomain.com/bot.php
 ```
 ### Code to edit
 
-Just edit this part on bot.php
-
+Just edit 2nd line by changing api key on bot.php
+api key can be found here https://ocr.space/ocrapi
+ 
 ```shell
 //Change OCR-KEY to your api key from ocr.space website
             $result = file_get_contents('http://api.ocr.space/parse/imageurl?apikey=<OCR-KEY-XXX>&url='.$id_url);
