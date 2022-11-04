@@ -3,15 +3,11 @@
  
 Simple Telegram Bot to extract text from image based on ocr api <br>
 
-<a href="https://t.me.com/official_gemechis/">
-  <img align="left" alt="Simple Telegram Bot to extract text from image based on ocr api by Gemchis Elias" width="100%" src="screenshot.png" />
-</a>
-<br />
+<a href="https://t.me.com/official_gemechis/"><img align="left" alt="Simple Telegram Bot to extract text from image based on ocr api by Gemchis Elias" width="100%" src="screenshot.png" /></a> \
 
 Check out <a href="https://t.me/horanocr_bot">The Sample Bot </a> 
 
 <br>
-
 
 ## Installing / Getting started
 Go to <a href="https://t.me/botfather">@botfather <a/> and create a new bot. Copy your api token and setwebhook by pasting this link on browser.
