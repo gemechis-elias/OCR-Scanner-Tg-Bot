@@ -1,4 +1,5 @@
- # Text from Image Scanner Telegram Bot &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+ # Text from Image Scanner Telegram Bot
+ &middot; [![Build Status](https://img.shields.io/travis/npm/npm/latest.svg?style=flat-square)](https://travis-ci.org/npm/npm) [![npm](https://img.shields.io/npm/v/npm.svg?style=flat-square)](https://www.npmjs.com/package/npm) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
  
 Simple Telegram Bot to extract text from image based on ocr api <br>
 
@@ -8,11 +9,12 @@ Simple Telegram Bot to extract text from image based on ocr api <br>
 <br>
 <br>
 
+
 ## Installing / Getting started
-Tkinter can be installed using pip. The following command is run in the command prompt to install Tkinter
+Go to <a href="https://t.me/botfather">@botfather <a/> and create a new bot. Copy your api token and setwebhook by pasting this link on browser.
 
 ```shell
-pip install tk
+https://api.telegram.org/bot<YOUR BOT TOKEN>/setWebHook?url=yourdomain.com/bot.php
 ```
 ### Run This Code
 
